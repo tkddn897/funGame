@@ -1,0 +1,76 @@
+body {
+  background-color: black;
+}
+
+section {
+  position: relative;
+}
+
+.game {
+  margin: 50px auto;
+  width: 800px;
+  height: 500px;
+  border-radius: 15px;
+  vertical-align: middle;
+  background: url("img/background.png") center/cover no-repeat;
+}
+
+.play__btn {
+  margin: 20px auto;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 0%;
+  left: 50%;
+}
+
+.time {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  position: absolute;
+  text-align: center;
+  top: 6%;
+  left: 50%;
+  transform: translate(-35%, 0%);
+}
+
+.count {
+  top: 15%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  margin: 20px auto;
+  background-color: brown;
+  font-size: 40px;
+
+  transform: translate(-25%, 0%);
+}
+
+ul {
+  list-style: none;
+}
+
+.carrot {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url("img/carrot.png") center/cover no-repeat;
+}
+
+.bug {
+  top: 50%;
+  left: 40%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url("img/bug.png") center/cover no-repeat;
+}
