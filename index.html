@@ -3,48 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Fun Game</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
     <script
       src="https://kit.fontawesome.com/418754a774.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section>
-      <div class="game"></div>
-      <button class="play__btn">
-        <i class="fas fa-stop"></i>
+    <section class="game">
+      <header class="game__header">
+        <button class="game__button">
+          <i class="fas fa-play"></i>
+        </button>
+        <span class="game__timer game__timer__hide">0:0</span>
+        <span class="game__score game__score__hide">9</span>
+      </header>
+      <section class="game__field"></section>
+    </section>
+    <section class="pop-up pup-up__hide">
+      <button class="pop-up__refresh">
+        <i class="fas fa-redo"></i>
       </button>
-      <input class="time" type="text" value="00 : 00" disabled />
-      <div class="count">
-        0
-      </div>
-      <ul>
-        <li class="bug"></li>
-        <li class="bug"></li>
-        <li class="bug"></li>
-        <li class="bug"></li>
-        <li class="bug"></li>
-        <li class="bug"></li>
-        <li class="bug"></li>
-        <li class="bug"></li>
-        <li class="bug"></li>
-        <li class="bug"></li>
-      </ul>
-      <ul>
-        <li class="carrot" style="left: 10px;"></li>
-        <li class="carrot"></li>
-        <li class="carrot"></li>
-        <li class="carrot"></li>
-        <li class="carrot"></li>
-        <li class="carrot"></li>
-        <li class="carrot"></li>
-        <li class="carrot"></li>
-        <li class="carrot"></li>
-        <li class="carrot"></li>
-      </ul>
+      <span class="pop-up__message">REPLAY?</span>
     </section>
   </body>
 </html>

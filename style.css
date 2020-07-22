@@ -1,76 +1,115 @@
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 body {
+  text-align: center;
   background-color: black;
 }
 
-section {
-  position: relative;
-}
-
 .game {
-  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
   width: 800px;
   height: 500px;
-  border-radius: 15px;
-  vertical-align: middle;
-  background: url("img/background.png") center/cover no-repeat;
+  border-radius: 20px;
+  margin: auto;
+  background: url(img/background.png) center/cover;
 }
 
-.play__btn {
-  margin: 20px auto;
+.game__header {
   display: flex;
-  position: absolute;
   flex-direction: column;
-  top: 0%;
-  left: 50%;
+  align-items: center;
+  padding: 20px;
 }
 
-.time {
+.game__button {
+  width: 60px;
+  height: 60px;
+  background-color: wheat;
+  border: 4px solid black;
+  font-size: 24px;
+  transition: transform 300ms ease-in;
+}
+
+.game__button :hover {
+  transform: scale(1.1);
+}
+
+.game__timer {
   width: 100px;
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  margin: 20px auto;
-  position: absolute;
+  background-color: white;
   text-align: center;
-  top: 6%;
-  left: 50%;
-  transform: translate(-35%, 0%);
+  border-radius: 20px;
+  border: 5px solid black;
+  font-size: 40px;
+  margin-top: 8px;
+  visibility: hidden;
+  user-select: none;
+  cursor: auto;
 }
 
-.count {
-  top: 15%;
-  left: 50%;
+.game__score {
   width: 50px;
   height: 50px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  border-radius: 50px;
-  margin: 20px auto;
-  background-color: brown;
-  font-size: 40px;
-
-  transform: translate(-25%, 0%);
+  font-size: 38px;
+  text-align: center;
+  background-color: darksalmon;
+  color: white;
+  border: 3px solid black;
+  border-radius: 50%;
+  margin-top: 8px;
+  visibility: hidden;
+  user-select: none;
 }
 
-ul {
-  list-style: none;
+.game__field {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
 }
 
-.carrot {
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background: url("img/carrot.png") center/cover no-repeat;
+.pop-up {
+  display: block;
+  width: 400px;
+  height: 140px;
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto;
+  transform: translateY(-150%);
+  background-color: #00000090;
+  color: white;
+  text-align: center;
 }
 
+.pup-up__hide {
+  display: none;
+}
+
+.pop-up__refresh {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  background-color: wheat;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.pop-up__message {
+  display: block;
+  font-size: 38px;
+}
+
+.carrt,
 .bug {
-  top: 50%;
-  left: 40%;
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background: url("img/bug.png") center/cover no-repeat;
+  transition: transform 100ms ease-in;
+}
+
+.carrot:hover,
+.bug:hover {
+  transform: scale(1.1);
 }
